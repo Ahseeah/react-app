@@ -1,9 +1,19 @@
 import React, { Component } from 'react'
-import HelloWorld from './components/HelloWorld'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Navbar from './components/Navbar'
+//import Home from './components/Home'
+//import Cart from './components/Cart'
 
 class App extends Component {
   render() {
-    return <HelloWorld />
+    return (
+      <BrowserRouter>
+        <div className="App">
+          <Navbar />
+          <Switch />
+        </div>
+      </BrowserRouter>
+    )
   }
 }
 
